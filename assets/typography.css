@@ -1,0 +1,16 @@
+body {
+    font-family: 'Courier New', Courier, monospace;    
+    background-color: #17181b;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, Div {
+    color: #BFCBCE
+}
+
+/*
+#17181b - purpleish black
+#303655 - purple
+#BFCBCE - gray
+#84A7BA - light blue
+#6F90AF - blue
+*/
