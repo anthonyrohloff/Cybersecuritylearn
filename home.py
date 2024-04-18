@@ -14,8 +14,7 @@ app.layout = html.Div([
             html.H1("About", 
                     style={"text-decoration": "underline"}),
             html.Div('''
-                This is an example of a simple Dash app with
-                local, customized CSS.
+                This website will teach you about cybersecurity.
             ''')
         ])
     )
