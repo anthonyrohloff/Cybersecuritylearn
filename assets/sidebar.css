@@ -10,7 +10,8 @@
     z-index: 1050;
     transition: width 0.1s ease-in-out;
   }
-  
+
+
   /* when the user hovers on the sidebar, expand it */
   .sidebar:hover {
     width: 16rem;
@@ -45,7 +46,8 @@
 /* Highlight active NavLink */
 .sidebar .nav-link.active {
     background-color: #6F90AF; /* Change background color of active link */
-    border-left: 3px solid #ffffff; /* Add left border to active link */
+    border-left: 3px solid #BFCBCE; /* Add left border to active link */
+    margin: 0;
 }
 
 /* Adjust color of the active icon and text */
@@ -63,6 +65,9 @@
     align-items: center;
     overflow: hidden;
     white-space: nowrap;
+    height: 60px;
+    margin-bottom: 20px;
+    border-bottom: thin #BFCBCE solid;
   }
   
   /* position the header relative to the logo and hide by default */
@@ -71,6 +76,7 @@
     margin-left: 1rem;
     margin-bottom: 0;
     transition: opacity 0.1s ease-in-out;
+    border-bottom: thin #BFCBCE;
   }
   
   /* reveal the header when the sidebar is toggled */

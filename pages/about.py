@@ -1,11 +1,5 @@
-from dash import Dash, html
+from dash import html
 import dash_bootstrap_components as dbc
-
-app = Dash(
-    __name__,
-    suppress_callback_exceptions=True,
-    external_stylesheets=[dbc.themes.MATERIA, dbc.icons.FONT_AWESOME],
-)
 
 sidebar = html.Div(
     [
@@ -15,7 +9,6 @@ sidebar = html.Div(
             ],
             className="sidebar-header",
         ),
-        html.Hr(),
         dbc.Nav(
             [
                 dbc.NavLink(
@@ -49,7 +42,7 @@ sidebar = html.Div(
     className="sidebar",
 )
 
-app.layout = html.Div(
+layout = html.Div(
     [
         sidebar,
         html.Div(
@@ -67,7 +60,7 @@ app.layout = html.Div(
                         html.H1("About", style={"text-decoration": "underline"}),
                         html.Div(
                             '''
-                            This website will teach you about cybersecurity.
+                            About me!
                             '''
                         )
                     ]
@@ -76,6 +69,3 @@ app.layout = html.Div(
         )
     ]
 )
-
-if __name__ == '__main__':
-    app.run_server(debug=True)
