@@ -4,6 +4,7 @@ from dash.dependencies import Input, Output
 
 from pages.home import layout as home_layout
 from pages.about import layout as about_layout
+from pages.basics import layout as basics_layout
 
 app = Dash(
     __name__,
@@ -28,6 +29,8 @@ def display_page(pathname):
         return home_layout
     elif pathname == '/about':
         return about_layout
+    elif pathname == '/basics':
+        return basics_layout
     else:
         return 'Page not found'
 

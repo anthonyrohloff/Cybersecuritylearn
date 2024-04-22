@@ -69,10 +69,10 @@ layout = html.Div(
                 html.Div(
                     className="app-body",
                     children=[
-                        html.H1("Home", style={"text-decoration": "underline"}),
+                        html.H1("Basics", style={"text-decoration": "underline"}),
                         html.Div(
                             '''
-                            Welcome to the home page.
+                            
                             '''
                         )
                     ]

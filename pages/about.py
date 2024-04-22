@@ -26,6 +26,18 @@ sidebar = html.Div(
                 dbc.NavLink(
                     [
                         html.Div([
+                            html.I(className="fa-solid fa-star"),
+                            html.Span("Basics", style={"color": "#BFCBCE", "verticalAlign": "middle"})
+                        ], className="d-flex align-items-center")
+                    ],
+                    href="/basics",
+                    active="exact",
+                    className="nav-link",
+                ),
+                html.Br(),
+                dbc.NavLink(
+                    [
+                        html.Div([
                             html.I(className="fas fa-user me-2"),
                             html.Span("About", style={"color": "#BFCBCE", "verticalAlign": "middle"})
                         ], className="d-flex align-items-center")
